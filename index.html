@@ -57,8 +57,8 @@
     async function typewriter(txt) {
       var x = document.getElementById("typing");
       var y = document.getElementById("ting");
-      x.volume = 0.6;
-      y.volume = 0.6;
+      x.volume = 1.6;
+      y.volume = 1.6;
 
       for (let i = 0; i < txt.length; ++i) {
         x.play();
@@ -72,7 +72,7 @@
     async function reverseTypewriter(txt) {
       for (let i = txt.length; i > 0; i--) {
         var audio = document.getElementById("stopTyping");
-        audio.volume = 0.6;
+        audio.volume = 1.6;
         audio.play();
 
         line.innerHTML = line.innerHTML.slice(0, -1)
